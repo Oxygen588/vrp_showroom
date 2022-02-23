@@ -1,0 +1,235 @@
+<style>
+  @keyframes updown {
+    0%{margin-top: 3px;border-radius:5px;}
+    50%{margin-top: 15px;border-radius:20px;}
+    100%{margin-top: 3px;border-radius:5px;}
+  }
+  
+  
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .box, .title {
+      width: 100%;
+    }
+  }
+    </style>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Luckiest+Guy'><link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+       
+        <div id="hud">
+            <div class="bag-column">
+                <div class="avia-image-container bag-image">
+                <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c48b.png" width="200" height="200"/>
+                </div>
+                
+                <div class="avia-image-container">
+                    <img src="https://www.searchpng.com/wp-content/uploads/2019/03/Cadillac-car-logo-PNG-715x715.png" width="200" height="200"/>
+                </div>
+                
+                <div class="avia-image-container">
+                <img src="https://www.freepnglogos.com/uploads/audi-logo-0.gif" width="200" height="200"/>
+                </div>
+                <div class="avia-image-container">
+                <img src="http://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19707.png"width="200" height="200"/>
+                </div>
+                <div class="avia-image-container">
+                    <img src="https://seeklogo.com/images/D/dacia-logo-971F424816-seeklogo.com.png"width="200" height="200"/>
+                    </div>
+                    <div class="avia-image-container">
+                        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/ferrari-emblem-1-logo.png"width="200" height="200"/>
+                        </div>
+                <div class="avia-image-container">
+                <img src="https://www.freepnglogos.com/uploads/lamborghini-logo-png/lamborghini-logo-png-meaning-information-carlogos-3.png"width="200" height="200"/>
+                </div>
+                <div class="avia-image-container">
+                <img src="http://pngimg.com/uploads/mercedes_logos/small/mercedes_logos_PNG28.png"width="200" height="200"/>
+                </div>
+                <div class="avia-image-container">
+                    <img src="https://www.freepnglogos.com/uploads/toyota-logo-png/toyota-logos-brands-logotypes-0.png"width="200" height="200"/>
+                    </div>      
+                    <div class="avia-image-container">
+                        <img src="http://assets.stickpng.com/images/580b585b2edbce24c47b2cac.png"width="200" height="200"/>
+                        </div>      
+                        <div class="avia-image-container">
+                            <img src="https://www.pinclipart.com/picdir/middle/28-288590_ford-logo-png-clipart-png-massimo-vignelli-logos.png"width="200" height="200"/>
+                            </div>    
+                            <div class="avia-image-container">
+                                <img src="https://i.pinimg.com/originals/90/f0/f7/90f0f75a94e18564c375e1fd1d49ac89.png"width="200" height="200"/>
+                                </div> 
+                                <div class="avia-image-container">
+                                    <img src="http://assets.stickpng.com/images/580b585b2edbce24c47b2cf2.png"width="200" height="200"/>
+                                    </div>   
+                                    <div class="avia-image-container">
+                                        <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c48a.png"width="200" height="200"/>
+                                        </div>     
+                                        <div class="avia-image-container">
+                                            <img src="http://assets.stickpng.com/images/580b585b2edbce24c47b2c73.png"width="200" height="200"/>
+                                            </div>   
+                                            <div class="avia-image-container">
+                                                <img src="https://img.pngio.com/filedodge-logo-2010png-wikimedia-commons-dodge-png-2850_490.png"width="200" height="200"/>
+                                                </div>   
+                                                <div class="avia-image-container">
+                                                    <img src="http://pngimg.com/uploads/chevrolet/%D1%81hevrolet_PNG109.png"width="200" height="200"/>
+                                                    </div>   
+                                          
+                                              
+                <!-- Go ahead add more -->
+              
+        </div>
+        
+        <div style="    background-color: #57667577; /* Green */
+        border: none;
+        color: rgba(255, 255, 255, 0.363);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        
+        font-size: 16px;
+        
+        position: relative;
+        top:50px;
+            height: 300px;
+            width: 24%;
+        
+        
+        border-radius: 7px;
+        
+">
+        <div class="progressbar index-1" data-progress="30">
+            <div class="bar">
+                Top Speed
+              <div class="progress"></div>
+            </div>
+          </div>
+          
+          <div class="progressbar index-2" data-progress="60">
+            <div class="bar">
+                Frane
+              <div class="progress"></div>
+            </div>
+          </div>
+          
+          <div class="progressbar index-3" data-progress="90">
+            <div class="bar">
+                Acceleratie
+              <div class="progress"></div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div id="hud">
+            <button style="    background-color: #576675; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            
+            font-size: 56px;
+            
+            position: relative;
+                top: -500px;
+                left: 69%;
+                height: 100px;
+                width: 14%;
+            
+            
+            border-radius: 7px;" id="urmatoareamasina"><i class="fa fa-angle-double-right"></i></button>
+            
+            <button style="    background-color: #576675; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            
+            font-size: 56px;
+            
+            position: relative;
+            top: -500px;
+                left: 2%;
+                height: 100px;
+                width: 14%;
+            
+            
+            border-radius: 7px;
+" id="masinanaterioara"><i class="fa fa-angle-double-left"></i></button>
+
+<button class='box' style="
+
+
+background-color: #576675;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+
+font-size: 22px;
+
+position: relative;
+top: 51px;
+width: 15%;
+    left: 34.2%;
+
+    animation-name: updown;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+border-radius: 17px;" onclick="cumparamasina()">Cumpara</button>
+
+<div class='box'><div class="pret"></div></div>
+    </div>
+    <div  style="    background-color: #576675; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 56px;
+ 
+        height: 300px;
+        width: 16%;
+    
+    
+    border-radius: 27px;" class="culorile">
+        
+        <a onclick="culoare(1)" class="butonel butonel5" style = 'background-color: rgb(255, 255, 255);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(2)" class="butonel butonel5" style = 'background-color: rgb(0, 0, 0);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(3)" class="butonel butonel5" style = 'background-color: rgb(78, 78, 78);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(4)" class="butonel butonel5" style = 'background-color: rgb(255, 251, 0);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(5)" class="butonel butonel5" style = 'background-color: rgb(0, 255, 0);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(6)" class="butonel butonel5" style = 'background-color: rgb(194, 30, 30);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(7)" class="butonel butonel5" style = 'background-color: rgb(10, 101, 221);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(8)" class="butonel butonel5" style = 'background-color: rgb(200, 24, 171);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(9)" class="butonel butonel5" style = 'background-color: rgb(0, 247, 255);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(10)" class="butonel butonel5" style = 'background-color: rgb(86, 6, 110);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(11)" class="butonel butonel5" style = 'background-color: rgb(184, 132, 12);' role="button" aria-pressed="true"></a>
+        <a onclick="culoare(12)" class="butonel butonel5" style = 'background-color: rgb(255, 94, 0);' role="button" aria-pressed="true"></a>
+
+      </div>
+
+ 
+    
+    </div>
+
+        
+
+
+
+   
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>
